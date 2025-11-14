@@ -73,15 +73,15 @@ int main() {
         int validarDoWhile = 0;
         do{
             printf("escolha a linha\n");
-            int teste = scanf(" %d", &linha);
+            int validarTipo = scanf(" %d", &linha);
 
             int validar1 = 0;
             while(validar1 == 0){
-                if (linha > tamanhoTabuleiro || linha < 1 || teste != 1){
+                if (linha > tamanhoTabuleiro || linha < 1 || validarTipo != 1){
                     printf("Entrada inválida! Digite um número entre 1 e %d.\n", tamanhoTabuleiro);
                     while(getchar() != '\n');
                     printf("escolha a linha\n");
-                    teste = scanf(" %d", &linha);
+                    validarTipo = scanf(" %d", &linha);
                 }else {
                     validar1 = 1;
                 }
